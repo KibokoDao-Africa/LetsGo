@@ -1,10 +1,10 @@
-import { Box, Toolbar } from "@mui/material";
+// import { Box, Toolbar } from "@mui/material";
 import {
   ThirdwebNftMedia,
   useAddress,
   useContract,
   useOwnedNFTs,
-} from "@thirdweb-dev/react";
+// } from "@thirdweb-dev/react";
 import React from "react";
 import { NFT_COLLECTION_ADDRESS } from "../../../constants/addresses";
 import { useRouter } from "next/router";
