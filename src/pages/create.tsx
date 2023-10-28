@@ -102,6 +102,7 @@ const Create = () => {
             mb="7%"
             fontSize={{ xs: "18px", sm: "28px", md: "40px" }}
             textAlign="center"
+            color="#fff"
           >
             Create Your Event
           </Typography>
@@ -264,6 +265,7 @@ const Create = () => {
             mt="10%"
             textAlign="center"
             fontSize={{ xs: "18px", sm: "28px", md: "40px" }}
+            color="#fff"
           >
             Mint Your Tickets
           </Typography>

@@ -24,7 +24,7 @@ const Loader = () => {
     <Box>
       <Grid container spacing={2} mt="3%">
         <Grid item xs={12} sm={4} md={3}>
-          <Box sx={{ display: "flex", width: "100%" }}>
+          <Box sx={{ display: "flex", width: "100%", alignItems: "center" }}>
             <Skeleton
               animation="wave"
               variant="circular"
@@ -49,7 +49,7 @@ const Loader = () => {
           />
         </Grid>
         <Grid item xs={12} sm={4} md={3}>
-          <Box sx={{ display: "flex", width: "100%" }}>
+          <Box sx={{ display: "flex", width: "100%", alignItems: "center" }}>
             <Skeleton
               animation="wave"
               variant="circular"
@@ -74,7 +74,7 @@ const Loader = () => {
           />
         </Grid>{" "}
         <Grid item xs={12} sm={4} md={3}>
-          <Box sx={{ display: "flex", width: "100%" }}>
+          <Box sx={{ display: "flex", width: "100%", alignItems: "center" }}>
             <Skeleton
               animation="wave"
               variant="circular"
