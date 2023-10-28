@@ -110,7 +110,7 @@ const Ticket = ({ nft, contractMetadata }: Props) => {
                         </Web3Button>
                       </Box>
                     ) : (
-                      <Typography>Login to Buy Ticket</Typography>
+                      <Typography>Login </Typography>
                     )}
                   </Box>
                 </Grid>
