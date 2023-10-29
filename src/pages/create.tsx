@@ -12,13 +12,24 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { useEffect, useRef, useState } from "react";
-import { useAddress } from "@thirdweb-dev/react";
+import {
+  Web3Button,
+  useAddress,
+  useContract,
+  useContractWrite,
+  useStorageUpload,
+} from "@thirdweb-dev/react";
 import Stack from "@mui/material/Stack";
 import LinearProgress from "@mui/material/LinearProgress";
 import { useCreateEventMutation } from "@/state/services";
+import Mint from "@/components/Mint";
 
 const Create = () => {
   const address = useAddress();
+  const [amount, setAmount] = useState<number>(1);
+  // State to store generated random IDs
+  const [tokenIds, setTokenIds] = useState<number>(4);
+
   const [image, setImage] = useState<any>(null);
   const [preview, setPreview] = useState<any>(null);
   const fileInputRef = useRef<any>(null);
@@ -36,6 +47,28 @@ const Create = () => {
     time: "",
     deployerWalletAddress: "",
   });
+
+  const { contract } = useContract(
+    "0x717F9d7605b0669f1c81e71385763634a556faC9"
+  );
+  const { mutateAsync: upload } = useStorageUpload();
+  const { mutateAsync: mintTo, isLoading: mintLoading } = useContractWrite(
+    contract,
+    "mintTo"
+  );
+
+  const mintNft = async () => {
+    try {
+      const dataToUpload: never[] = [];
+
+      // And upload the data with the upload function
+      const uris = await upload({ data: dataToUpload });
+      const data = await mintTo({ args: [address, tokenIds, uris, amount] });
+      console.info("contract call successs", data);
+    } catch (err) {
+      console.error("contract call failure", err);
+    }
+  };
 
   const [createEvent, { isLoading, isError, isSuccess }] =
     useCreateEventMutation();
@@ -373,6 +406,7 @@ const Create = () => {
           >
             Mint/Create Tickets
           </Button>
+          <Mint />
         </Container>
       ) : (
         <Container

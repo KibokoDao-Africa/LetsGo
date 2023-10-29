@@ -17,7 +17,12 @@ import {
   rainbowWallet,
   phantomWallet,
 } from "@thirdweb-dev/react";
-import { Aurora, AuroraTestnet, Mumbai } from "@thirdweb-dev/chains";
+import {
+  Aurora,
+  AuroraTestnet,
+  Mumbai,
+  FlareTestnetCoston,
+} from "@thirdweb-dev/chains";
 import { Provider } from "react-redux";
 import { store } from "../state/store";
 
@@ -32,7 +37,7 @@ export const theme = createTheme({
   },
 });
 
-const activeChain = Mumbai;
+const activeChain = FlareTestnetCoston;
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
