@@ -58,3 +58,27 @@ https://faucet.towolabs.com/
 
 https://coston-explorer.flare.network/address/0x42Ca855E799a2891182c1859f78FFadE939f869C
 
+
+
+## Client side
+When we open a site we will see a white screen and wallet authorization window.
+![My Image3](https://i.ibb.co/48PmjW6/Screenshot-from-2023-06-22-16-14-18.png)
+After successful authorization, we see the home page. On the menu, there are "My tickets" (where all the tickets that the current user owns) and "About page" (Where there's a little description about the Dapp).
+![My Image](https://i.ibb.co/CBmLx3N/Screenshot-from-2023-06-22-15-14-45.png)
+![My Image2](https://i.ibb.co/r23mDgZ/Screenshot-from-2023-06-22-15-15-07.png)
+After clicking on any listed event we are redirected to the event details page. All information about the event will be displayed in a detailed way, and there will be two columns, 1 for all **silver** tickets and the other one for all **VIP** tickets with each a button to buy a ticket if available or on sale.
+
+![My Image3](https://i.ibb.co/TW55sHf/Screenshot-from-2023-06-19-23-40-54.png)
+To purchase a ticket, we click on "Buy Now" and after a successful purchase, you'll be redirected to my tickets page where all tickets that the current user owns are displayed
+![My Image3](https://i.ibb.co/xJsq2gP/Screenshot-from-2023-06-22-16-13-58.png)
+
+Also, client can mint ticket qr code as NFT by clicking on the "Mint Ticket NFT" button.
+NFT view on the CELO explorer:
+![celo explorer](https://i.ibb.co/mXkzbDk/Screenshot-from-2023-06-22-16-46-12.png)
+
+Client can watch ticket QR code by clicking on the "Watch QR code" button.
+![Ticket QR_code](https://i.ibb.co/zFBX5H3/Screenshot-from-2023-06-22-18-34-05.png)
+After scanning qr code, ticket info page will open.
+###NOTE: Only owner  that scans a qr code of a ticket and opens ticket information page.
+![Ticket info](https://i.ibb.co/G0V4gnq/Screenshot-from-2023-06-22-15-14-26.png)
+
