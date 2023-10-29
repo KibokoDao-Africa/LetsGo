@@ -1,9 +1,9 @@
 ## Revolutionizing Ticketing with Decentralized NFTs
 
 **## Problem and Proposed Solution**
-``
+`
 Traditional ticketing systems suffer from issues related to scalping, fraud, a lack of control for event organizers, operational inefficiencies, and limited transferability and ownership. These problems collectively contribute to a less-than-optimal experience for both event-goers and event organizers. A decentralized ticketing platform with NFT minting on the Flare Network seeks to address and overcome these challenges, offering a more secure, transparent, and user-centric solution.
-``
+`
 
 
 ##Market Opportunity
