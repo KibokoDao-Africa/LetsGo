@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const url = "https://ticketbackend-4oxc.onrender.com";
+const url = "https://nfticketsv2.buynance.org";
 
 export const EventsApi = createApi({
   reducerPath: "EventsApi",
