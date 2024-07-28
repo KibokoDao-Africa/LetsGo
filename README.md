@@ -33,6 +33,8 @@ Timothy Agevi -https://github.com/timothyAgevi
 
 Michael Mulika - https://github.com/mmulika
 
+Collins Koech - https://github.com/collinskoech11
+
 ## Getting Started
 
 First, run the development server:
